@@ -16,7 +16,7 @@ A modern, immersive personal portfolio website showcasing my professional profil
 
 | Intro Animation | Main View |
 |---------------|-----------|
-| ![Intro](./screenshots/intro-view.png) | ![Main](./screenshots/main-view.png) |
+| ![Intro](./screenshots/Intro.png) | ![Main](./screenshots/Main_Page.png) |
 
 ## Categories
 
