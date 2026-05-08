@@ -12,11 +12,6 @@ A modern, immersive personal portfolio website showcasing my professional profil
 - **Dark/Light Theme Toggle** — Smooth theme transitions
 - **Interactive Content Panels** — Smooth animations with Framer Motion
 
-## Screenshots
-
-| Intro Animation | Main View |
-|---------------|-----------|
-| ![Intro](./screenshots/Intro.png) | ![Main](./screenshots/Main_Page.png) |
 
 ## Categories
 
