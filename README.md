@@ -18,6 +18,23 @@ A modern, immersive personal portfolio website showcasing my professional profil
 |---------------|-----------|
 | ![Intro](./screenshots/intro-view.png) | ![Main](./screenshots/main-view.png) |
 
+## Categories
+
+### About
+A brief introduction sharing my passion for Civil Engineering, vibe coding, and Designing. Highlights my multidisciplinary expertise spanning engineering, design, and web technologies.
+
+### Certifications
+Showcasing my professional certifications and credentials earned through continuous learning and skill development in various fields.
+
+### Works
+A curated collection of my best projects — currently in progress and coming soon!
+
+### FAQ
+Common questions about my skills, experience, and work approach answered for quick reference.
+
+### Support
+A convenient way for visitors to support my work through PayPal donations.
+
 ## Tech Stack
 
 - React + TypeScript
