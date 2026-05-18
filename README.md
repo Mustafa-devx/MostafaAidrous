@@ -1,8 +1,12 @@
 # Mostafa Aidrous
 
-A modern, immersive personal portfolio website showcasing my professional profile, projects, and achievements.
+A modern, immersive personal portfolio website showcasing professional profile, projects, and achievements.
 
 ![Main View](./screenshots/main-view.png)
+
+## About
+
+A brief introduction sharing my passion for Civil Engineering, vibe coding, and Designing. Highlights my multidisciplinary expertise spanning engineering, design, and web technologies.
 
 ## Features
 
@@ -11,49 +15,32 @@ A modern, immersive personal portfolio website showcasing my professional profil
 - **Glass-morphism Design** — Frosted glass panels with enhanced transparency
 - **Dark/Light Theme Toggle** — Smooth theme transitions
 - **Interactive Content Panels** — Smooth animations with Framer Motion
+- **Certificate Showcase** — Real certificate images with animated gradient backgrounds
+- **Responsive Design** — Optimized for all devices
 
+## Sections
 
-## Categories
-
-### About
-A brief introduction sharing my passion for Civil Engineering, vibe coding, and Designing. Highlights my multidisciplinary expertise spanning engineering, design, and web technologies.
-
-### Certifications
-Showcasing my professional certifications and credentials earned through continuous learning and skill development in various fields.
-
-### Works
-A curated collection of my best projects — currently in progress and coming soon!
-
-### FAQ
-Common questions about my skills, experience, and work approach answered for quick reference.
-
-### Support
-A convenient way for visitors to support my work through PayPal donations.
+| Section | Description |
+|---------|-------------|
+| **About** | Professional background and expertise |
+| **Certifications** | Professional credentials with live certificate images |
+| **Works** | Portfolio of projects |
+| **FAQ** | Common questions and answers |
+| **Support** | Donation support via PayPal |
 
 ## Tech Stack
 
-- React + TypeScript
-- Vite
-- Framer Motion
-- Tailwind CSS v4
-- Lucide React Icons
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-FF0055?style=for-the-badge&logo=framer&logoColor=white)
 
-## Getting Started
+## Live Demo
 
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
+Visit the live site: [mostafaaidrous.com](https://mostafaaidrous.com)
 
 ## Contact
-
-Feel free to reach out for collaborations or inquiries:
 
 - Email: mostafaaidroustch@gmail.com
 - GitHub: [@Mustafa-devx](https://github.com/Mustafa-devx)
