@@ -1,6 +1,9 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Award, FileBadge, BookOpen, Code } from 'lucide-react';
+import { X, Award } from 'lucide-react';
 import { useState } from 'react';
+import alisonCert from '../../Certificates/alison_cert-1.png';
+import courseraCert from '../../Certificates/coursera_cert-1.png';
+import signalCert from '../../Certificates/signal_cert-1.png';
 
 interface Certificate {
     id: string;
@@ -10,7 +13,7 @@ interface Certificate {
     description: string;
     verificationUrl?: string;
     color: string;
-    icon: React.ElementType;
+    image: string;
 }
 
 const Certificates = () => {
@@ -27,8 +30,8 @@ const Certificates = () => {
             date: '2025',
             description: 'Comprehensive course covering the fundamentals of Building Information Modeling (BIM) for engineering projects.',
             verificationUrl: '#',
-            color: 'from-blue-500 to-cyan-500',
-            icon: BookOpen
+            color: 'from-black/60 to-purple-900/60',
+            image: courseraCert
         },
         {
             id: '2',
@@ -37,8 +40,8 @@ const Certificates = () => {
             date: '2025',
             description: 'Fundamental concepts of Project Management Professional (PMP) certification, covering initiation, planning, execution, monitoring, and closing.',
             verificationUrl: '#',
-            color: 'from-purple-500 to-pink-500',
-            icon: FileBadge
+            color: 'from-black/60 to-purple-800/60',
+            image: alisonCert
         },
         {
             id: '3',
@@ -47,8 +50,8 @@ const Certificates = () => {
             date: '2025',
             description: 'Object-oriented programming concepts in Python, working with classes, instances, and standard libraries.',
             verificationUrl: '#',
-            color: 'from-orange-500 to-red-500',
-            icon: Code
+            color: 'from-black/60 to-purple-700/60',
+            image: signalCert
         }
     ];
 
@@ -75,17 +78,24 @@ const Certificates = () => {
                         transition={{ delay: index * 0.08 }}
                         whileHover={{ y: -5, scale: 1.01 }}
                     >
-                        {/* Card Header with Icon */}
-                        <div className={`h-32 relative overflow-hidden flex items-center justify-center bg-gradient-to-r ${cert.color}`}>
-                            <div className="text-white filter drop-shadow-md z-10 transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
-                                <cert.icon className="w-12 h-12 opacity-90" />
-                            </div>
-
-                            {/* Shine Effect */}
-                            <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out z-20 pointer-events-none" />
-
-                            {/* Decorative Pattern */}
-                            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent" />
+                        {/* Card Header with Certificate Image */}
+                        <div className="h-32 relative overflow-hidden flex items-center justify-center bg-gradient-to-r from-purple-900 via-black to-purple-700 animate-gradient">
+                            <motion.div
+                                className="absolute inset-0 bg-gradient-to-r from-black via-purple-800 to-black"
+                                animate={{
+                                    background: [
+                                        'linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(88,28,135,0.7) 50%, rgba(0,0,0,0.7) 100%)',
+                                        'linear-gradient(90deg, rgba(88,28,135,0.7) 0%, rgba(0,0,0,0.7) 50%, rgba(88,28,135,0.7) 100%)',
+                                        'linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(88,28,135,0.7) 50%, rgba(0,0,0,0.7) 100%)',
+                                    ]
+                                }}
+                                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                            />
+                            <img 
+                                src={cert.image} 
+                                alt={cert.title} 
+                                className="h-full w-auto object-cover transform transition-transform duration-500 group-hover:scale-110 relative z-10"
+                            />
                         </div>
 
                         {/* Card Content */}
@@ -124,14 +134,23 @@ const Certificates = () => {
                             transition={{ duration: 0.2 }}
                         >
                             {/* Header */}
-                            <div className={`h-40 relative flex items-center justify-center overflow-hidden bg-gradient-to-r ${selectedCert.color}`}>
-                                <div className="text-white filter drop-shadow-lg transform scale-125">
-                                    <selectedCert.icon className="w-20 h-20 opacity-90" />
-                                </div>
-
-                                {/* Decorative Background Elements */}
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
-                                <div className="absolute bottom-0 left-0 w-24 h-24 bg-black/10 rounded-full blur-xl translate-y-1/2 -translate-x-1/2" />
+                            <div className="h-40 relative flex items-center justify-center overflow-hidden bg-gradient-to-r from-purple-900 via-black to-purple-700">
+                                <motion.div
+                                    className="absolute inset-0 bg-gradient-to-r from-black via-purple-800 to-black"
+                                    animate={{
+                                        background: [
+                                            'linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(88,28,135,0.8) 50%, rgba(0,0,0,0.8) 100%)',
+                                            'linear-gradient(90deg, rgba(88,28,135,0.8) 0%, rgba(0,0,0,0.8) 50%, rgba(88,28,135,0.8) 100%)',
+                                            'linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(88,28,135,0.8) 50%, rgba(0,0,0,0.8) 100%)',
+                                        ]
+                                    }}
+                                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                                />
+                                <img 
+                                    src={selectedCert.image} 
+                                    alt={selectedCert.title} 
+                                    className="h-full w-auto object-cover rounded-lg shadow-lg relative z-10"
+                                />
 
                                 {/* Close Button */}
                                 <button
